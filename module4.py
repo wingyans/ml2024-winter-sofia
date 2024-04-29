@@ -36,7 +36,7 @@ def main_function():
         number_input = int(input(f"Please enter your {i+1} out of {N} number: ")) # prompt user to provide each value they want on the number list 
         provided_numbers.append(number_input) #each time the user provides a number, add it to the list 
   
-  X  = int(input("Please enter your target value X in integer."))
+  X  = int(input("Please enter your target value X in integer for comparison against the previous list that your provided."))
   result = match_function(provided_numbers, X)
   print("Number matching result:",result)
   
