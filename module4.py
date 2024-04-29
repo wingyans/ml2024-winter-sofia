@@ -30,15 +30,17 @@ def match_function(provided_numbers,X):
 #ask for input main function: 
 
 def main_function():
-  N = int(input("Please enter the total number (N) of values you want on the list (input must be a positive integer)."))
+  N = int(input("Please enter the total number of values you want on the list (input must be a positive integer)."))
   provided_numbers = [] #empty list waiting for update
+  for i in range(N):
+        number_input = int(input(f"Please enter your {i+1} out of {N} number: ")) # prompt user to provide each value they want on the number list 
+        provided_numbers.append(number_input) #each time the user provides a number, add it to the list 
+  
+  X  = int(input("Please enter your target value X in integer."))
+  result = match_function(provided_numbers, X)
+  print("Number matching result:",result)
   
   
-
-  
-
-
-
 
 #to execute the function: 
 main_function()
