@@ -6,7 +6,7 @@
 
 #solution:
 #(1) program ask users to provide a positive integer N (used as total number of items that will be stored in the list)
-#(2) create a blank list (number list) that can hold N number of items 
+#(2) create a blank list (provided_numbers) that can hold N number of items 
 #(3) use a loop to ask user to enter the N numbers, one number each time (the number list will be updated with each number provided)
 #(4) ask the user to provide target value X which would be compared against the list of numbers that was provided earlier
 #(5) a for loop should be used in the search function to compare X against each entry in the list one by one
@@ -18,12 +18,22 @@
 #code: 
 #matching function: 
 
+def match_function(provided_numbers,X):
+  for i in range(len(provided_numbers)):
+        if provided_numbers[i] == X:
+            return i + 1       #if matched, provide index position of the matched number
+    # If the number is not found, return -1
+    return -1         #if not matched, return -1 in the output
 
 
 
 #ask for input main function: 
 
 def main_function():
+  N = int(input("Please enter the total number (N) of values you want on the list (input must be a positive integer)."))
+  provided_numbers = [] #empty list waiting for update
+  
+  
 
   
 
