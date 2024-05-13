@@ -42,4 +42,4 @@ else:
 #finding coefficient of determinaation for kNN regression
     y_predicted = model.predict(x)
     r2 = r2_score(y, y_predicted)
-    print(f"The coefficient of determination for kNN regression is {r2}")
+    print(f"The coefficient of determination for {k}NN regression is {r2}")
