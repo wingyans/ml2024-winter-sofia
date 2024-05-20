@@ -39,5 +39,12 @@ else:
 
     print(f"The predicted y value (Y) for the provided data point with x-coordinate = {X[0][0]} using {k}NN regression is {Y[0]}")
 
+#finding coefficient of determinaation for kNN regression
+    y_predicted = model.predict(x)
+    r2 = r2_score(y, y_predicted)
+    print(f"The coefficient of determination for {k}NN regression is {r2}")
+
+
+#find variance of labels in the training dataset
 variance = np.var(y)
 print(f"The variance of the labels in the training dataset is {variance}")
